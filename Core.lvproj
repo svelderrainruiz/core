@@ -12,6 +12,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="src" Type="Folder"/>
 		<Item Name="Core.lvlib" Type="Library" URL="../src/Core.lvlib"/>
 		<Item Name="Test Core API.vi" Type="VI" URL="../src/Test Core API.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
