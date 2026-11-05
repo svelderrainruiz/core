@@ -30,7 +30,9 @@
 			<Property Name="Bld_excludedDirectory[3].pathType" Type="Str">relativeToAppDir</Property>
 			<Property Name="Bld_excludedDirectoryCount" Type="Int">4</Property>
 			<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
+			<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 			<Property Name="Bld_localDestDir" Type="Path">/C/ProgramData/LabVIEW Benchmark Actor Plugins/NI_AB_PROJECTNAME</Property>
+			<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 			<Property Name="Bld_previewCacheID" Type="Str">{5AAB20B2-F056-408C-A4B5-EA73B523F29D}</Property>
 			<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 			<Property Name="Bld_version.build" Type="Int">1</Property>
