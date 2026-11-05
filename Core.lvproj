@@ -84,34 +84,26 @@
 			<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[6].type" Type="Str">Container</Property>
 			<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[7].itemID" Type="Ref">/My Computer/Core.lvlib/KeyToVirtualKey.vi</Property>
+			<Property Name="Source[7].itemID" Type="Ref">/My Computer/Core.lvlib/Main.vi</Property>
 			<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[7].type" Type="Str">VI</Property>
 			<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[8].itemID" Type="Ref">/My Computer/Core.lvlib/Main.vi</Property>
+			<Property Name="Source[8].itemID" Type="Ref">/My Computer/Core.lvlib/LaunchEventRecorder Argument--cluster.ctl</Property>
 			<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[8].type" Type="Str">VI</Property>
 			<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[9].itemID" Type="Ref">/My Computer/Core.lvlib/LaunchEventRecorder Argument--cluster.ctl</Property>
+			<Property Name="Source[9].itemID" Type="Ref">/My Computer/Core.lvlib/LaunchEventRecorder.vi</Property>
 			<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[9].type" Type="Str">VI</Property>
 			<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[10].itemID" Type="Ref">/My Computer/Core.lvlib/LaunchEventRecorder.vi</Property>
+			<Property Name="Source[10].itemID" Type="Ref">/My Computer/Core.lvlib/Set Record Run ID.vi</Property>
 			<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[10].type" Type="Str">VI</Property>
 			<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[11].itemID" Type="Ref">/My Computer/Core.lvlib/Set Record Run ID.vi</Property>
+			<Property Name="Source[11].itemID" Type="Ref">/My Computer/Test Core API.vi</Property>
 			<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 			<Property Name="Source[11].type" Type="Str">VI</Property>
-			<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[12].itemID" Type="Ref">/My Computer/Core.lvlib/KeybdEventSerializerLUT.vi</Property>
-			<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
-			<Property Name="Source[12].type" Type="Str">VI</Property>
-			<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-			<Property Name="Source[13].itemID" Type="Ref">/My Computer/Test Core API.vi</Property>
-			<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
-			<Property Name="Source[13].type" Type="Str">VI</Property>
-			<Property Name="SourceCount" Type="Int">14</Property>
+			<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
 
 		</Item>
