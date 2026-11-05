@@ -1,0 +1,19 @@
+[project]
+name = "core"
+version = "0.1.0"
+labview-version = "2026"
+labview-bitness = "64"
+
+[dependencies]
+# lbap_dependencies is published as a GitHub Release asset on
+# svelderrainruiz/dependencies (tag vip-v1.0.0), not a hosted VIPM feed,
+# so vipm cannot yet auto-resolve/auto-install it from this declaration
+# alone (confirmed: a git-ref dependency table here causes vipm to try
+# rebuilding the dependency from source instead of fetching the
+# pre-built release asset, and fails on an unrelated internal package
+# name). This entry documents the real dependency relationship; the
+# actual install step in
+# .github/workflows/build-core-source-distribution.yml downloads and
+# installs the pinned release asset directly until a hosted feed exists
+# for this org (see VITechnologies/SandboxSBOMReporting#263).
+lbap_dependencies = "1.0.0.45"

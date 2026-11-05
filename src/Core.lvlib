@@ -125,12 +125,10 @@
 		<Item Name="Is Safe to Destroy Refnums.vi" Type="VI" URL="../Is Safe to Destroy Refnums.vi"/>
 		<Item Name="Module Running State--enum.ctl" Type="VI" URL="../Module Running State--enum.ctl"/>
 	</Item>
-	<Item Name="KeyToVirtualKey.vi" Type="VI" URL="../../../dependencies/src/KeyToVirtualKey.vi"/>
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="LaunchEventRecorder Argument--cluster.ctl" Type="VI" URL="../LaunchEventRecorder Argument--cluster.ctl"/>
 	<Item Name="LaunchEventRecorder.vi" Type="VI" URL="../LaunchEventRecorder.vi"/>
 	<Item Name="Set Record Run ID.vi" Type="VI" URL="../Set Record Run ID.vi"/>
-	<Item Name="KeybdEventSerializerLUT.vi" Type="VI" URL="../../../modules/coordinator/src/Libraries/KeybdEventSerializerLUT.vi"/>
 </Library>
