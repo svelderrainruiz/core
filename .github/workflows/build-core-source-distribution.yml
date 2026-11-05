@@ -97,6 +97,27 @@ jobs:
               throw 'Exactly one LabVIEW 2026 64-bit installation must be available.'
           }
 
+      - name: Install dependencies .vip Package
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          # Core.lvlib still carries two orphaned, pre-repo-split VI
+          # references (KeyToVirtualKey.vi, KeybdEventSerializerLUT.vi) whose
+          # recorded relative URLs point outside this repo entirely. Both
+          # VIs are real files that now live in svelderrainruiz/dependencies'
+          # own src/ tree, which that repo's own published .vip package
+          # installs wholesale into the shared "LBA Plugins" application-data
+          # destination this org's plugin ecosystem already registers as a
+          # LabVIEW search location -- installing it here lets LabVIEW's own
+          # missing-item resolution find these two VIs by name, without
+          # editing Core.lvlib's binary content. Pinned to a specific,
+          # immutable release tag for determinism.
+          $vipUrl = 'https://github.com/svelderrainruiz/dependencies/releases/download/vip-v1.0.0/lbap_dependencies-1.0.0.45.vip'
+          $vipPath = Join-Path $env:RUNNER_TEMP 'lbap_dependencies-1.0.0.45.vip'
+          Invoke-WebRequest -Uri $vipUrl -OutFile $vipPath
+          & vipm --labview-version 2026 --labview-bitness 64 install -y $vipPath
+          if ($LASTEXITCODE -ne 0) { throw "Installing dependencies' .vip package failed with exit code $LASTEXITCODE." }
+
       - name: Prepare Isolated Build Output
         shell: pwsh
         run: |
