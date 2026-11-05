@@ -1,0 +1,5 @@
+self-hosted-runner:
+  # Custom label for this repo's dedicated self-hosted Windows runner
+  # (see runner-inventory.json in VITechnologies/SandboxSBOMReporting).
+  labels:
+    - windows-labview2026-core
